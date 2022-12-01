@@ -35,6 +35,5 @@ VALUES
 (12, 'Photo 12', 'landscape', 'Sunny', 'photo12.png'),
 (13, 'Photo 12', 'people', 'Sunny', 'photo13.png'),
 (14, 'Photo 12', 'people', 'Sunny', 'photo14.png'),
-(15, 'Photo 12', 'people', 'Sunny', 'photo15.png'),
-(16, 'Photo 12', 'people', 'Sunny', 'photo16.png');
+(15, 'Photo 12', 'people', 'Sunny', 'photo15.png');
 ```
