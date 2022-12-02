@@ -18,7 +18,7 @@ connection.connect(function (err) {
 });
 
 router.get("/", function (req, res, next) {
-  const user_query = "SELECT * FROM photo WHERE category='landscape'";
+  const user_query = "SELECT * FROM photo";
   connection.query(user_query, function (error, result, fields) {
     if (error) throw error;
     res.render("index", { title: "Chan Chi Man Album", photos: result });

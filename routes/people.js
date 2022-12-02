@@ -14,7 +14,7 @@ connection.connect(function (err) {
   if (err) {
     return console.error("Database Connection Error: " + err.message);
   }
-  console.log("Database Connection is Successful.");
+  //console.log("Database Connection is Successful.");
 });
 
 router.get("/", function (req, res, next) {
