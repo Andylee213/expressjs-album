@@ -2,13 +2,9 @@ var express = require("express");
 const mysql = require("mysql2");
 
 var router = express.Router();
+var dbConn = require("../db-conn.json");
 
-let connection = mysql.createConnection({
-  host: "localhost",
-  user: "dbuser",
-  password: "123321",
-  database: "albums",
-});
+let connection = mysql.createConnection(dbConn);
 
 connection.connect(function (err) {
   if (err) {

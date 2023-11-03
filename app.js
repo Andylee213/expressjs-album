@@ -3,6 +3,7 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+var hbs = require("hbs");
 
 var livereload = require("livereload");
 var connectLiveReload = require("connect-livereload");
@@ -11,6 +12,7 @@ var indexRouter = require("./routes/index");
 var landscapeRouter = require("./routes/landscape");
 var peopleRouter = require("./routes/people");
 var jsonRouter = require("./routes/json");
+hbs.registerPartials(__dirname + "/views/partials");
 
 console.log("Starting express js dynamic photo album ...");
 
